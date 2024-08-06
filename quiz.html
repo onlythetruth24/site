@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="quiz.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"defer></script>
+  <script src="quiz.js"defer></script>
+</head>
+<body class = "backgroundImage">
+  <div class = "top-nav">
+    <!-- <a><img src ="logo1.png", class="im_g"></a> -->
+    <a class = "active", href="index.html">Home</a>
+    <a href="views.html">Views</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="news.html">News</a>
+    <a href="contact.html"> Contact</a>
+  </div>
+    <div id="start-container">
+      <!-- <img src="quiz-cover.png"> -->
+      <div class = "column">
+        <img src= "quiz-cover.png" width="111%" >
+      
+        <button id="start-quiz">Start Quiz</button>
+        
+      </div>
+    </div>
+   
+    <form id="quiz-form" style="display: none;">
+        <!-- Questions will be dynamically injected here -->
+    </form>
+  <div class = "other-results"> </div>
+  <div style="padding:45px; transition:5s;"></div>
+  <h2>   </h2>
+  <div class = "results" >
+     <img id="image" src="results.png" alt="Image"style="display: none; x-coor: 90px" loading="lazy">
+      <canvas id="result-chart" style="display: none;"></canvas>
+    </div>  
+    <script src="quiz.js"></script> <!-- Include quiz.js before script.js -->
+  <script src= "script.js"></script>
+   
+</body>
+</html>
